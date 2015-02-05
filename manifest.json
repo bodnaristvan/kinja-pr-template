@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "Kinja GitHub pull request template",
+	"description": "Set the default description template for a Github PR",
+	"version": "1.0",
+	"author": "Bodnar Istvan",
+
+	"content_scripts": [
+		{
+			"matches": ["https://github.com/gawkermedia/*/compare/*"],
+			"js": ["pr-template.js"]
+		}
+	],
+	"permissions": [
+		"activeTab"
+	]
+}
